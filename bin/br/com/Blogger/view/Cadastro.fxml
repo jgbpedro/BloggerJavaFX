@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.Blogger.controller.CadastroController">
+   <children>
+      <Pane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #00fFFF;">
+         <children>
+            <Label layoutX="42.0" layoutY="8.0" text="POSTAGEM" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="26.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAutor" layoutX="42.0" layoutY="96.0" prefHeight="25.0" prefWidth="407.0" />
+            <ComboBox fx:id="cboTema" layoutX="42.0" layoutY="198.0" onAction="#selectCategoria" prefHeight="25.0" prefWidth="407.0" />
+            <TextArea fx:id="txtConteudo" layoutX="42.0" layoutY="260.0" prefHeight="161.0" prefWidth="407.0" promptText="Restam 1000 caracteres" wrapText="true" />
+            <TextField fx:id="txtTitulo" layoutX="42.0" layoutY="146.0" prefHeight="25.0" prefWidth="407.0" />
+            <Button fx:id="btnImagem" layoutX="42.0" layoutY="441.0" mnemonicParsing="false" onAction="#btnImage" text="Selecionar Imgem" />
+            <Button fx:id="btnPostar" layoutX="316.0" layoutY="441.0" mnemonicParsing="false" onAction="#Post" text="Postar" />
+            <Label layoutX="42.0" layoutY="75.0" text="AUTOR" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="125.0" text="TITULO" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="177.0" text="TEMA" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="240.0" text="CONTEUDO" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtID" layoutX="42.0" layoutY="48.0" text="ID" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtRest" layoutX="324.0" layoutY="242.0" text="Restam 1000 caracteres" textFill="#0000008c">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnVisualizar" disable="true" layoutX="381.0" layoutY="441.0" mnemonicParsing="false" onAction="#Visualizar" text="Visualizar" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

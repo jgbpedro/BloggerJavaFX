@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.Blogger.controller.DetalhesController">
+   <children>
+      <ScrollPane prefHeight="900.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="900.0" prefWidth="600.0" style="-fx-background-color: #00fFFF;">
+               <children>
+                  <Label layoutX="39.0" layoutY="718.0" text="Nome:" />
+                  <Label layoutX="246.0" layoutY="13.0" text="JG7 NewS">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtDtema" layoutX="39.0" layoutY="51.0" prefHeight="21.0" prefWidth="532.0" text="TEMA" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtDtitulo" layoutX="39.0" layoutY="72.0" prefHeight="24.0" prefWidth="532.0" text="POSTAGEM" wrapText="true">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtTempo" layoutX="39.0" layoutY="99.0" text="Postado por fulano em dd/mm/aa as hh:mm">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imgDet" fitHeight="262.0" fitWidth="510.0" layoutX="39.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" />
+                  <TextField fx:id="txtDnome" layoutX="81.0" layoutY="714.0" />
+                  <TextArea fx:id="txtComentar" layoutX="39.0" layoutY="752.0" prefHeight="42.0" prefWidth="522.0" />
+                  <Button fx:id="btnComentar" layoutX="245.0" layoutY="714.0" mnemonicParsing="false" onAction="#Comentar" text="Comentar" />
+                  <ListView fx:id="lstComentarios" layoutX="39.0" layoutY="808.0" prefHeight="59.0" prefWidth="521.0" />
+                  <Button fx:id="btnNew" layoutX="549.0" layoutY="16.0" mnemonicParsing="false" onAction="#NovaPostagem" prefHeight="25.0" prefWidth="26.0" text="+" />
+                  <Button fx:id="btnReturn" layoutX="517.0" layoutY="16.0" mnemonicParsing="false" onAction="#Voltar" prefHeight="25.0" prefWidth="25.0" text="↩">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="txtConteudoP" alignment="TOP_LEFT" layoutX="40.0" layoutY="397.0" prefHeight="303.0" prefWidth="510.0" text="Conteudo" wrapText="true" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
